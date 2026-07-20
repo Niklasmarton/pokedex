@@ -5,7 +5,7 @@ export async function commandInspect(state: State, ...pokemon: string[]): Promis
         const pokemon_obj = state.pokedex[pokemon[0]];
         console.log(`Name: ${pokemon_obj.name}`);
         console.log(`Height: ${pokemon_obj.height}`);
-        console.log(`Weight: ${pokemon_obj.height}`);
+        console.log(`Weight: ${pokemon_obj.weight}`);
         console.log("Stats:");
         for (const s of pokemon_obj.stats) {
             console.log(`  -${s.stat.name}: ${s.base_stat}`)
